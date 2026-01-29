@@ -11,6 +11,7 @@ accounts_dict = {'accounts':
                 ]
                 }
 
-with open ('/Users/kishorebattula/Desktop/Kishore/accounts_jason.txt', mode='w') as accounts:
-        json.dump(accounts_dict,accounts)
-        print("Json file have been successfully updated.")
+with open('/Users/kishorebattula/Desktop/Kishore/accounts_jason.txt',mode='w') as accounts:
+    json.dump(accounts_dict, accounts)
+
+print("data succesfully dumped in to the Json file")
