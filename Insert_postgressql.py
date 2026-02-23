@@ -12,7 +12,8 @@ id_ip = int(input("Please enter your id"))
 name_ip = input("please enter your name")
 sal = int(input("plese enter your salary"))
 
-sqlquery ="insert into employee(id,name,salary) values (id_ip,name_ip,sal)"
+datatobeinserted=[id_ip,name_ip,sal]
+sqlquery ="insert into employee(id,name,salary) values (120,'kishore',30)"
 
 try:
     conn = psycopg2.connect(**db_params)
